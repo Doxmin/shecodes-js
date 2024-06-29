@@ -21,15 +21,15 @@
 
 //Challange two
 
-function itsWindy(speed){
-   if(speed > 5){
-    alert("it is windy");
-   }
+// function itsWindy(speed){
+//    if(speed > 5){
+//     alert("it is windy");
+//    }
  
- else {
-        alert("it is not windy");
-}
-}
+//  else {
+//         alert("it is not windy");
+// }
+// }
 
-itsWindy(5);
-itsWindy(10);
+// itsWindy(5);
+// itsWindy(10);
