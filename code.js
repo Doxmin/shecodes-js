@@ -36,36 +36,108 @@
 
 
 
- // Function to handle vacation planning
- function planVacation() {
-    // Prompt the user for destination
-    var destination = prompt("Where would you like to go on vacation?");
+ 
+//  function planVacation() {
+  
+//     var destination = prompt("Where would you like to go on vacation?");
     
-    // Prompt the user for trip duration
-    var tripDuration = prompt("How long is your trip (in days)?");
-    tripDuration = parseInt(tripDuration); // Convert input to integer
+   
+//     var tripDuration = prompt("How long is your trip (in days)?");
+//     tripDuration = parseInt(tripDuration); 
+   
+//     var wantExcursions = confirm("Would you like to go on excursions?");
     
-    // Prompt the user if they want to go on excursions
-    var wantExcursions = confirm("Would you like to go on excursions?");
     
-    // Display summary based on user inputs
-    var summary = "Vacation Summary:\n\n";
-    summary += "Destination: " + destination + "\n";
-    summary += "Trip Duration: " + tripDuration + " days\n";
-    summary += "Excursions: " + (wantExcursions ? "Yes" : "No") + "\n";
+//     var summary = "Vacation Summary:\n\n";
+//     summary += "Destination: " + destination + "\n";
+//     summary += "Trip Duration: " + tripDuration + " days\n";
+//     summary += "Excursions: " + (wantExcursions ? "Yes" : "No") + "\n";
     
-    alert(summary);
+//     alert(summary);
     
-    // Additional logic based on user preferences
-    if (tripDuration >= 7) {
-      alert("That sounds like a nice long vacation!");
-    } else {
-      alert("Short and sweet! Enjoy your trip!");
-    }
+   
+//     if (tripDuration >= 7) {
+//       alert("That sounds like a nice long vacation!");
+//     } else {
+//       alert("Short and sweet! Enjoy your trip!");
+//     }
     
-    if (wantExcursions) {
-      alert("Don't forget to plan some exciting excursions!");
-    } else {
-      alert("Relaxing vacation ahead!");
-    }
-  }
+//     if (wantExcursions) {
+//       alert("Don't forget to plan some exciting excursions!");
+//     } else {
+//       alert("Relaxing vacation ahead!");
+//     }
+//   }
+
+
+  // function isCold(temperature) {
+  //   return temperature <= 10;
+  // }
+
+  // let temperature = prompt("What temperature is it today?");
+
+  // if (isCold(temperature)) {
+  //   alert("it is cold today");
+  // } else {
+  //   alert("it is warm today");
+  // }
+
+
+
+//   function isWindy(speed, unit) {
+//     if (speed > 5 && unit === "metric") {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+
+
+
+
+
+// let speed = prompt("What is the wind speed?");
+// let unit = prompt("In what unit? (metric or imperial?")
+
+// if (isWindy(speed)) {
+//   alert("It is windy");
+// } else {
+//   alert("It is not windy");
+// }
+
+
+
+
+let now = new Date();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let year = now.getFullYear();
+let day = now.getDay();
+let milliseconds = now.getMilliseconds();
+
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+let month = months[now.getMonth()];
+
+// console.log("Date:", now);
+// console.log("Milliseconds:", milliseconds);
+// console.log("Day:", days[day]);
+// console.log("Year:", year);
+// console.log("Month:", month);
+// console.log("Hours:", hours);
+// console.log("Minutes:", minutes);
+
+function formatDate(date) {
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  
+  const dayOfWeek = days[date.getDay()];
+  const month = months[date.getMonth()];
+  const dayOfMonth = date.getDate();
+  const year = date.getFullYear();
+  
+  return `${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`;
+}
+
+
+console.log(formatDate(new Date()));
